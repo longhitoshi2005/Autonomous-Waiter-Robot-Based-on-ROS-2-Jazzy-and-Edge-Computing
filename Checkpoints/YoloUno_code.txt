@@ -1,0 +1,50 @@
+from mqtt_as import MQTTClient, config
+from yolo_uno import *
+from dht20 import *
+
+cfg = config.copy()
+
+async def on_mqtt_msg_V3(topic, msg):
+  if msg == '1':
+    neopix.show(0, hex_to_rgb('#00ff00'))
+  else:
+    neopix.show(0, hex_to_rgb('#000000'))
+
+cfg['ssid'] = 'abcd'
+cfg['wifi_pw'] = '12345678'
+cfg['server'] = 'mqtt.ohstem.vn'
+cfg['port'] = 1883
+cfg['user'] = 'user01234'
+cfg['password'] = ''
+dht20 = DHT20()
+cfg['topics'].append(('V3', on_mqtt_msg_V3))
+
+def deinit():
+  mqtt_client.close()
+
+import yolo_uno
+yolo_uno.deinit = deinit
+
+mqtt_client = MQTTClient(cfg); MQTTClient.DEBUG = True
+
+async def task_b_I_T_M():
+  while True:
+    await asleep_ms(2000)
+    await mqtt_client.publish('V1', (await dht20.atemperature()))
+    await mqtt_client.publish('V2', (await dht20.ahumidity()))
+
+async def setup():
+
+  print('App started')
+  neopix.show(0, hex_to_rgb('#ff0000'))
+  await mqtt_client.connect()
+  neopix.show(0, hex_to_rgb('#000000'))
+
+  create_task(task_b_I_T_M())
+
+async def main():
+  await setup()
+  while True:
+    await asleep_ms(100)
+
+run_loop(main())

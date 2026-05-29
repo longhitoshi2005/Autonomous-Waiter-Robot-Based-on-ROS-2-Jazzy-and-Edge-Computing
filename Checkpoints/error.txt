@@ -1,0 +1,454 @@
+linhdeptrai@minhxinhgai:~$ sudo apt-get install -f -y
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
+125 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Can't fix broken locale name "en_US.UTF=8".
+Setting up docutils-common (0.16+dfsg-2) ...
+Can't fix broken locale name "en_US.UTF=8".
+dpkg: error processing package docutils-common (--configure):
+ installed docutils-common package post-installation script subprocess returned error exit status 29
+dpkg: dependency problems prevent configuration of python3-docutils:
+ python3-docutils depends on docutils-common (= 0.16+dfsg-2); however:
+  Package docutils-common is not configured yet.
+
+dpkg: error processing package python3-docutils (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of python3-catkin-pkg-modules:
+ python3-catkin-pkg-modules depends on python3-docutils; however:
+  Package python3-docutils is not configured yet.
+
+dpkg: error processing package python3-catkin-pkg-modules (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of python3-colcon-ros:
+ python3-colcon-ros depends on python3-catkin-pkg-modules (>= 0.4.14) | python3-catkin-pkg (>= 0.4.14); however:
+  Package python3-catkin-pkg-modules is not configured yet.
+  Package python3-catkin-pkg is not installed.
+No apport report written because the error message indicates its a followup error from a previous failure.
+                                       No apport report written because the error message indicates its a followup error from a previous failure.
+
+dpkg: error processing package python3-colcon-ros (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of python3-rosdistro-modules:
+ python3-rosdistro-modules depends on python3-catkin-pkg-modules; however:
+  Package python3-catkin-pkg-modules is not configured yet.
+
+dpkg: error processing package python3-rosdistro-modules (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ros2pkg:
+ ros-foxy-ros2pkg depends on python3-catkin-pkg-modules; however:
+  Package python3-catkin-pkg-modules is not configured yet.
+
+dpkg: error processing package ros-foxy-ros2pkg (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of python3-rospkg-modules:
+ python3-rospkg-modules depends on python3-catkin-pkg-modules; however:
+  Package python3-catkin-pkg-modules is not configured yet.No apport report written because MaxReports is reached already
+
+
+dpkg: error processing package python3-rospkg-modules (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ros-core:
+ ros-foxy-ros-core depends on ros-foxy-ros2pkg; however:
+  Package ros-foxy-ros2pkg is not configured yet.
+
+dpkg: error processing package ros-foxy-ros-core (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-core:
+ ros-foxy-ament-cmake-core depends on python3-catkin-pkg-modules; however:
+  Package python3-catkin-pkg-modules is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-core (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of ros-foxy-ament-lint-common:
+ ros-foxy-ament-lint-common depends on ros-foxy-ament-cmake-core; however:
+No apport report written because MaxReports is reached already
+                                                                Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-lint-common (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ros2component:
+ ros-foxy-ros2component depends on ros-foxy-ros2pkg; however:
+  Package ros-foxy-ros2pkg is not configured yet.
+
+dpkg: error processing package ros-foxy-ros2component (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of ros-foxy-ros2doctor:
+ ros-foxy-ros2doctor depends on python3-catkin-pkg-modules; however:
+  Package python3-catkin-pkg-modules is not configured yet.
+ ros-foxy-ros2doctor depends on python3-rosdistro-modules; however:
+  Package python3-rosdistro-modules is not configured yet.
+
+No apport report written because MaxReports is reached already
+                                                              dpkg: error processing package ros-foxy-ros2doctor (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ros2launch:
+ ros-foxy-ros2launch depends on ros-foxy-ros2pkg; however:
+  Package ros-foxy-ros2pkg is not configured yet.
+
+dpkg: error processing package ros-foxy-ros2launch (--configure):
+ dependency problems - leaving unconfigured
+dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-include-directories:
+No apport report written because MaxReports is reached already
+                                                               ros-foxy-ament-cmake-include-directories depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-include-directories (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake:
+ ros-foxy-ament-cmake depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-cmake:
+ ros-foxy-rosidl-cmake depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-cmake (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rmw-fastrtps-shared-cpp:
+ ros-foxy-rmw-fastrtps-shared-cpp depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-rmw-fastrtps-shared-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of python3-colcon-common-extensions:
+ python3-colcon-common-extensions depends on python3-colcon-ros; however:
+  Package python3-colcon-ros is not configured yet.
+
+dpkg: error processing package python3-colcon-common-extensions (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-typesupport-c:
+ ros-foxy-rosidl-typesupport-c depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-typesupport-c (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-pytest:
+ ros-foxy-ament-cmake-pytest depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-pytest (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-export-interfaces:
+ ros-foxy-ament-cmake-export-interfaces depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-export-interfaces (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-export-definitions:
+ ros-foxy-ament-cmake-export-definitions depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-export-definitions (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ros2run:
+ ros-foxy-ros2run depends on ros-foxy-ros2pkg; however:
+  Package ros-foxy-ros2pkg is not configured yet.
+
+dpkg: error processing package ros-foxy-ros2run (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-typesupport-introspection-c:
+ ros-foxy-rosidl-typesupport-introspection-c depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+ ros-foxy-rosidl-typesupport-introspection-c depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-typesupport-introspection-c (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-export-link-flags:
+ ros-foxy-ament-cmake-export-link-flags depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-export-link-flags (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-version:
+ ros-foxy-ament-cmake-version depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-version (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-typesupport-introspection-cpp:
+ ros-foxy-rosidl-typesupport-introspection-cpp depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+ ros-foxy-rosidl-typesupport-introspection-cpp depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+ ros-foxy-rosidl-typesupport-introspection-cpp depends on ros-foxy-rosidl-typesupport-introspection-c; however:
+  Package ros-foxy-rosidl-typesupport-introspection-c is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-typesupport-introspection-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rclcpp:
+ ros-foxy-rclcpp depends on ros-foxy-rosidl-typesupport-c; however:
+  Package ros-foxy-rosidl-typesupport-c is not configured yet.
+
+dpkg: error processing package ros-foxy-rclcpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-export-libraries:
+ ros-foxy-ament-cmake-export-libraries depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-export-libraries (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-typesupport-cpp:
+ ros-foxy-rosidl-typesupport-cpp depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+ ros-foxy-rosidl-typesupport-cpp depends on ros-foxy-rosidl-typesupport-c; however:
+  Package ros-foxy-rosidl-typesupport-c is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-typesupport-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-export-include-directories:
+ ros-foxy-ament-cmake-export-include-directories depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-export-include-directories (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-generator-cpp:
+ ros-foxy-rosidl-generator-cpp depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+ ros-foxy-rosidl-generator-cpp depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-generator-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rclcpp-action:
+ ros-foxy-rclcpp-action depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+ ros-foxy-rclcpp-action depends on ros-foxy-rclcpp; however:
+  Package ros-foxy-rclcpp is not configured yet.
+
+dpkg: error processing package ros-foxy-rclcpp-action (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-export-targets:
+ ros-foxy-ament-cmake-export-targets depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+ ros-foxy-ament-cmake-export-targets depends on ros-foxy-ament-cmake-export-libraries; however:
+  Package ros-foxy-ament-cmake-export-libraries is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-export-targets (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-libraries:
+ ros-foxy-ament-cmake-libraries depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-libraries (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-default-runtime:
+ ros-foxy-rosidl-default-runtime depends on ros-foxy-rosidl-typesupport-c; however:
+  Package ros-foxy-rosidl-typesupport-c is not configured yet.
+ ros-foxy-rosidl-default-runtime depends on ros-foxy-rosidl-typesupport-cpp; however:
+  Package ros-foxy-rosidl-typesupport-cpp is not configured yet.
+ ros-foxy-rosidl-default-runtime depends on ros-foxy-rosidl-typesupport-introspection-c; however:
+  Package ros-foxy-rosidl-typesupport-introspection-c is not configured yet.
+ ros-foxy-rosidl-default-runtime depends on ros-foxy-rosidl-typesupport-introspection-cpp; however:
+  Package ros-foxy-rosidl-typesupport-introspection-cpp is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-default-runtime (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rmw-fastrtps-cpp:
+ ros-foxy-rmw-fastrtps-cpp depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+ ros-foxy-rmw-fastrtps-cpp depends on ros-foxy-rmw-fastrtps-shared-cpp; however:
+  Package ros-foxy-rmw-fastrtps-shared-cpp is not configured yet.
+ ros-foxy-rmw-fastrtps-cpp depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-rmw-fastrtps-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-typesupport-fastrtps-cpp:
+ ros-foxy-rosidl-typesupport-fastrtps-cpp depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-typesupport-fastrtps-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-stereo-msgs:
+ ros-foxy-stereo-msgs depends on ros-foxy-rosidl-default-runtime; however:
+  Package ros-foxy-rosidl-default-runtime is not configured yet.
+
+dpkg: error processing package ros-foxy-stereo-msgs (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-default-generators:
+ ros-foxy-rosidl-default-generators depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+ ros-foxy-rosidl-default-generators depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+ ros-foxy-rosidl-default-generators depends on ros-foxy-rosidl-generator-cpp; however:
+  Package ros-foxy-rosidl-generator-cpp is not configured yet.
+ ros-foxy-rosidl-default-generators depends on ros-foxy-rosidl-typesupport-c; however:
+  Package ros-foxy-rosidl-typesupport-c is not configured yet.
+ ros-foxy-rosidl-default-generators depends on ros-foxy-rosidl-typesupport-cpp; however:
+  Package ros-foxy-rosidl-typesupport-cpp is not configured yet.
+ ros-foxy-rosidl-default-generators depends on ros-foxy-rosidl-typesupport-introspection-c; however:
+  Package ros-foxy-rosidl-typesupport-introspection-c is not configured yet.
+ ros-foxy-rosidl-default-generators depends on ros-foxy-rosidl-typesupport-introspection-cpp; however:
+  Package ros-foxy-rosidl-typesupport-introspection-cpp is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-default-generators (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-actionlib-msgs:
+ ros-foxy-actionlib-msgs depends on ros-foxy-rosidl-default-runtime; however:
+  Package ros-foxy-rosidl-default-runtime is not configured yet.
+
+dpkg: error processing package ros-foxy-actionlib-msgs (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosbag2-cpp:
+ ros-foxy-rosbag2-cpp depends on ros-foxy-rosidl-typesupport-cpp; however:
+  Package ros-foxy-rosidl-typesupport-cpp is not configured yet.
+ ros-foxy-rosbag2-cpp depends on ros-foxy-rosidl-typesupport-introspection-cpp; however:
+  Package ros-foxy-rosidl-typesupport-introspection-cpp is not configured yet.
+
+dpkg: error processing package ros-foxy-rosbag2-cpp (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-tf2-ros:
+ ros-foxy-tf2-ros depends on ros-foxy-rclcpp; however:
+  Package ros-foxy-rclcpp is not configured yet.
+ ros-foxy-tf2-ros depends on ros-foxy-rclcpp-action; however:
+  Package ros-foxy-rclcpp-action is not configured yet.
+
+dpkg: error processing package ros-foxy-tf2-ros (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-trajectory-msgs:
+ ros-foxy-trajectory-msgs depends on ros-foxy-rosidl-default-runtime; however:
+  Package ros-foxy-rosidl-default-runtime is not configured yet.
+
+dpkg: error processing package ros-foxy-trajectory-msgs (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-tf2-bullet:
+ ros-foxy-tf2-bullet depends on ros-foxy-tf2-ros; however:
+  Package ros-foxy-tf2-ros is not configured yet.
+
+dpkg: error processing package ros-foxy-tf2-bullet (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-python:
+ ros-foxy-ament-cmake-python depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-python (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-std-srvs:
+ ros-foxy-std-srvs depends on ros-foxy-rosidl-default-runtime; however:
+  Package ros-foxy-rosidl-default-runtime is not configured yet.
+
+dpkg: error processing package ros-foxy-std-srvs (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-auto:
+ ros-foxy-ament-cmake-auto depends on ros-foxy-ament-cmake; however:
+  Package ros-foxy-ament-cmake is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-auto (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-rosidl-typesupport-fastrtps-c:
+ ros-foxy-rosidl-typesupport-fastrtps-c depends on ros-foxy-rosidl-cmake; however:
+  Package ros-foxy-rosidl-cmake is not configured yet.
+ ros-foxy-rosidl-typesupport-fastrtps-c depends on ros-foxy-rosidl-typesupport-fastrtps-cpp; however:
+  Package ros-foxy-rosidl-typesupport-fastrtps-cpp is not configured yet.
+
+dpkg: error processing package ros-foxy-rosidl-typesupport-fastrtps-c (--configure):
+ dependency problems - leaving unconfigured
+No apport report written because MaxReports is reached already
+                                                              dpkg: dependency problems prevent configuration of ros-foxy-ament-cmake-test:
+ ros-foxy-ament-cmake-test depends on ros-foxy-ament-cmake-core; however:
+  Package ros-foxy-ament-cmake-core is not configured yet.
+
+dpkg: error processing package ros-foxy-ament-cmake-test (--configure):
+ dependency problems - leaving unconfigured
+dpkg: too many errors, stopping
+No apport report written because MaxReports is reached already
+                                                              Errors were encountered while processing:
+ docutils-common
+ python3-docutils
+ python3-catkin-pkg-modules
+ python3-colcon-ros
+ python3-rosdistro-modules
+ ros-foxy-ros2pkg
+ python3-rospkg-modules
+ ros-foxy-ros-core
+ ros-foxy-ament-cmake-core
+ ros-foxy-ament-lint-common
+ ros-foxy-ros2component
+ ros-foxy-ros2doctor
+ ros-foxy-ros2launch
+ ros-foxy-ament-cmake-include-directories
+ ros-foxy-ament-cmake
+ ros-foxy-rosidl-cmake
+ ros-foxy-rmw-fastrtps-shared-cpp
+ python3-colcon-common-extensions
+ ros-foxy-rosidl-typesupport-c
+ ros-foxy-ament-cmake-pytest
+ ros-foxy-ament-cmake-export-interfaces
+ ros-foxy-ament-cmake-export-definitions
+ ros-foxy-ros2run
+ ros-foxy-rosidl-typesupport-introspection-c
+ ros-foxy-ament-cmake-export-link-flags
+ ros-foxy-ament-cmake-version
+ ros-foxy-rosidl-typesupport-introspection-cpp
+ ros-foxy-rclcpp
+ ros-foxy-ament-cmake-export-libraries
+ ros-foxy-rosidl-typesupport-cpp
+ ros-foxy-ament-cmake-export-include-directories
+ ros-foxy-rosidl-generator-cpp
+ ros-foxy-rclcpp-action
+ ros-foxy-ament-cmake-export-targets
+ ros-foxy-ament-cmake-libraries
+ ros-foxy-rosidl-default-runtime
+ ros-foxy-rmw-fastrtps-cpp
+ ros-foxy-rosidl-typesupport-fastrtps-cpp
+ ros-foxy-stereo-msgs
+ ros-foxy-rosidl-default-generators
+ ros-foxy-actionlib-msgs
+ ros-foxy-rosbag2-cpp
+ ros-foxy-tf2-ros
+ ros-foxy-trajectory-msgs
+ ros-foxy-tf2-bullet
+ ros-foxy-ament-cmake-python
+ ros-foxy-std-srvs
+ ros-foxy-ament-cmake-auto
+ ros-foxy-rosidl-typesupport-fastrtps-c
+ ros-foxy-ament-cmake-test
+Processing was halted because there were too many errors.
+E: Sub-process /usr/bin/dpkg returned an error code (1)

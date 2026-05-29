@@ -1,0 +1,28 @@
+import machine
+from yolo_uno import *
+
+uart = machine.UART(2, baudrate=115200, rx=D4_PIN, tx=D3_PIN)
+uart.init(parity=None, stop=1, bits=8)
+
+async def uart_read_until(eol):
+  result = ''
+  while uart.any():
+    new_char = uart.read(1).decode()
+    if new_char == eol:
+      return result
+    else:
+      result += str(new_char)
+  return result
+
+async def setup():
+
+  print('App started')
+  uart.write(bytearray([0xAA,0x00,0x00,0x00]))
+  uart.write(str(''))
+
+async def main():
+  await setup()
+  while True:
+    await asleep_ms(100)
+
+run_loop(main())
